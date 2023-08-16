@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 * {
   margin: 0;
   padding: 10;
@@ -6,17 +8,18 @@
 
 .app {
   border: 2px solid black;
-  margin: 10px;
+  margin: 0 10px 0 10px;
   //   height: 97vh;
   padding: 30px;
   background-image: linear-gradient(
     rgba(217, 213, 248, 0.604),
     rgba(52, 193, 201, 0.485)
   );
+  font-family: $font-primary;
 
   .heading {
     text-align: center;
-    font-size: 5vh;
+    font-size: 7vh;
   }
 
   .filters {
@@ -24,11 +27,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    font-size: 3vw;
   }
 
   .all-tiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  .filters {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .app {
+    height: 100%;
+
+    .filters {
+      font-size: 1.3vw;
+    }
   }
 }

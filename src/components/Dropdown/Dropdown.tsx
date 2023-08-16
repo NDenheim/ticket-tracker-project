@@ -11,7 +11,7 @@ const DropdownBox = ({ handleFilterByRole }: Dropdown) => {
       <label htmlFor="role"> Search by role: </label>
 
       <select name="role" id="dropdown-menu" onChange={handleFilterByRole}>
-        <option value="">Choose your role</option>
+        <option value="">Choose a role</option>
         <option value="Junior Software Developer">
           Junior Software Developer
         </option>
