@@ -1,0 +1,48 @@
+.tracker {
+  margin: 10px 20px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  line-height: 2.5;
+  background-color: rgba(202, 198, 255, 0.741);
+
+  .name {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .counter {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10px 0 10px;
+    padding: 10px;
+    background-color: rgba(233, 232, 241, 0.518);
+    font-size: 18px;
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tracker {
+    width: 15vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .tracker {
+    width: 220px;
+  }
+}
