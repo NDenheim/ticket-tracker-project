@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav__heading {
+    font-size: 3vw;
+    text-decoration: none;
+    color: black;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+
+* {
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+.home {
+  &__heading {
+    text-align: center;
+    font-size: 7vh;
+  }
+
+  &__staff {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+    line-height: 3;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .app {
+    min-height: 99vh;
+  }
+}
