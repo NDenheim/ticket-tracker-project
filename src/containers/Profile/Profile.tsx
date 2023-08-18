@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import TeamMember from "../../types/Member";
 import "./Profile.scss";
+// import team from "../../data/team";
 
 type ProfileProps = {
   members: TeamMember[];
@@ -14,7 +15,23 @@ const Profile = ({ members }: ProfileProps) => {
   if (chosenMember === undefined) {
     return <p>Couldn't find a staff member with that name</p>;
   }
-  return <div></div>;
+  return (
+    <div className=".profile">
+      <div className="profile__content">
+        <h3>{chosenMember.name}</h3>
+        <img
+          src={chosenMember.profile.profilePicture}
+          alt={chosenMember.name}
+        />
+        <ul className="profile__info">
+          <li>Role: {chosenMember.role}</li>
+          <li>Experience: {chosenMember.profile.experience}</li>
+          <li>Department: {chosenMember.profile.department}</li>
+          <li>Tech Stack: {chosenMember.profile.techstack.join(", ")}</li>
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Profile;

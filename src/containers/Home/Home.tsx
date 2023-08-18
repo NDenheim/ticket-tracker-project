@@ -15,6 +15,7 @@ const Home = () => {
                 name={member.name}
                 role={member.role}
                 image={member.profile.profilePicture}
+                team={team}
               />
             </div>
           );

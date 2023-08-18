@@ -28,7 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tickets" element={<Tickets />} />
-          <Route path="/profile" element={<Profile members={team} />} />
+          <Route path="/:memberId" element={<Profile members={team} />} />
         </Routes>
       </div>
     </BrowserRouter>

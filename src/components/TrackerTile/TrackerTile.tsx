@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./TrackerTile.scss";
+import { Link } from "react-router-dom";
 
 type TrackerTileProps = {
   name: string;
@@ -21,7 +22,9 @@ const TrackerTiles = ({ name, role }: TrackerTileProps) => {
 
   return (
     <div className="tracker">
-      <p className="name">{name}</p>
+      <Link to={`/${name}`}>
+        <p className="name">{name}</p>
+      </Link>
       <p>{role}</p>
       <div className="counter">
         <p>Counter</p>
