@@ -1,5 +1,4 @@
 import "./Home.scss";
-import TeamMember from "../../types/Member";
 import team from "../../data/team";
 import NameTile from "../../components/NameTile/NameTile";
 

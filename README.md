@@ -1,7 +1,7 @@
 # Ticket Tracker
 
-Welcome to my ticket tracker. This is a device which can be used to track completed tickets by employees.
+Welcome to my ticket tracker site. There are multiple pages to explore including a home page displaying member info, a tracker page where employees can track their own completed tickets as well as their coworkers and an individual profile page for each person.
 
-There are two filter functions (either by name or role), to easily navigate through the tracker and compare.
+On the ticket tracker page, you will find two filter functions (either by name or role), to easily navigate through the tracker and compare.
 
-This tracker uses React and Typescript.
+This site uses React and Typescript.
