@@ -1,4 +1,3 @@
-import { FormEvent, useState } from "react";
 import "./App.scss";
 import TrackerTiles from "./components/TrackerTile/TrackerTile";
 import Nav from "./components/Nav/Nav";

@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import TeamMember from "../../types/Member";
 import "./Profile.scss";
-// import team from "../../data/team";
 
 type ProfileProps = {
   members: TeamMember[];
