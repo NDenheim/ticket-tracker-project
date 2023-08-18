@@ -22,9 +22,9 @@ const NavMenu = ({ onClose }: NavMenuProps) => {
         <Link to={"/tickets"} onClick={onClose} className="nav-menu__item">
           Tickets
         </Link>
-        <Link to={"/profile"} onClick={onClose} className="nav-menu__item">
+        {/* <Link to={"/profile"} onClick={onClose} className="nav-menu__item">
           Profile
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

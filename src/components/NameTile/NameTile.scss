@@ -1,10 +1,24 @@
 .name-tile {
+  width: 12rem;
   &__image {
-    width: 15vw;
+    width: 10rem;
     aspect-ratio: 1/1;
   }
 
   &__name {
     color: black;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .name-tile {
+    &__image {
+      width: 15vw;
+      aspect-ratio: 1/1;
+    }
+
+    &__name {
+      color: black;
+    }
   }
 }

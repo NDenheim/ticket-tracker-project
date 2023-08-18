@@ -16,7 +16,7 @@ const Profile = ({ members }: ProfileProps) => {
     return <p>Couldn't find a staff member with that name</p>;
   }
   return (
-    <div className=".profile">
+    <div className="profile">
       <div className="profile__content">
         <h3>{chosenMember.name}</h3>
         <img
@@ -24,10 +24,19 @@ const Profile = ({ members }: ProfileProps) => {
           alt={chosenMember.name}
         />
         <ul className="profile__info">
-          <li>Role: {chosenMember.role}</li>
-          <li>Experience: {chosenMember.profile.experience}</li>
-          <li>Department: {chosenMember.profile.department}</li>
-          <li>Tech Stack: {chosenMember.profile.techstack.join(", ")}</li>
+          <li className="profile__info--item">
+            <strong>Role: </strong> {chosenMember.role}
+          </li>
+          <li className="profile__info--item">
+            <strong>Experience: </strong> {chosenMember.profile.experience}
+          </li>
+          <li className="profile__info--item">
+            <strong>Department: </strong> {chosenMember.profile.department}
+          </li>
+          <li className="profile__info--item">
+            <strong>Tech Stack: </strong>{" "}
+            {chosenMember.profile.techstack.join(", ")}
+          </li>
         </ul>
       </div>
     </div>
