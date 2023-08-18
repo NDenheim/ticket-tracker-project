@@ -3,9 +3,17 @@
   justify-content: space-between;
   align-items: center;
 
-  .nav__heading {
-    font-size: 3vw;
-    text-decoration: none;
-    color: black;
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    &--image {
+      width: 9rem;
+    }
+
+    &--heading {
+      font-size: 3vw;
+      text-decoration: none;
+      color: black;
+    }
   }
 }

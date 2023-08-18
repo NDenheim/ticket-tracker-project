@@ -22,38 +22,9 @@ const NavMenu = ({ onClose }: NavMenuProps) => {
         <Link to={"/tickets"} onClick={onClose} className="nav-menu__item">
           Tickets
         </Link>
-        {/* <Link to={"/profile"} onClick={onClose} className="nav-menu__item">
-          Profile
-        </Link> */}
       </div>
     </div>
   );
 };
 
 export default NavMenu;
-
-// const NavMenu = ({ onClose }: NavMenuProps) => {
-//     return (
-//       <div className="nav-menu">
-//         <div className="nav-menu__content">
-//           <img
-//             src={blackCross}
-//             alt="Close menu"
-//             className="nav-menu__cross"
-//             onClick={onClose}
-//           />
-//           <Link to={"/"} className="nav-menu__item" onClick={onClose}>
-//             Home
-//           </Link>
-
-//           <Link to={"/albums"} className="nav-menu__item" onClick={onClose}>
-//             All Albums
-//           </Link>
-
-//           <Link to={"/albums/rated"} className="nav-menu__item" onClick={onClose}>
-//             Rated Albums
-//           </Link>
-//         </div>
-//       </div>
-//     );
-//   };

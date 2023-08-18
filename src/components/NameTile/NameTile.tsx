@@ -22,32 +22,3 @@ const NameTile = ({ name, role, image }: NameTileProps) => {
 };
 
 export default NameTile;
-
-{
-  /* <Link to={`/albums/${album.idAlbum}`} key={album.idAlbum}> */
-}
-
-{
-  /* <div className="name-tile">
-        {team.map((member) => {
-            <Link to={`/${member}`}>
-            <img className="name-tile__image" src={image} alt="Staff picture" />
-            <h2>{name}</h2>
-            <p>{role}</p>
-        </Link>
-    })}; */
-}
-
-// const NameTile = ({ name, role, image, team }: NameTileProps) => {
-//     return (
-//       <div className="name-tile">
-//         <img className="name-tile__image" src={image} alt="Staff picture" />
-//         {team.map((member) => (
-//           <Link to={`/${member.name}`}>
-//             <h2>{name}</h2>
-//           </Link>
-//         ))}
-//         ;<p>{role}</p>
-//       </div>
-//     );
-//   };

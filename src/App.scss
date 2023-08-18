@@ -11,11 +11,7 @@
   margin: 0 10px 0 10px;
   //   height: 97vh;
   padding: 30px;
-  background-image: linear-gradient(
-    rgba(217, 213, 248, 0.604),
-    // rgba(52, 201, 159, 0.485),
-    rgba(52, 193, 201, 0.485)
-  );
+  background-image: linear-gradient(white, $color-primary);
   font-family: $font-primary;
 
   .heading {
