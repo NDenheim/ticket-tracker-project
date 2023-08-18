@@ -18,7 +18,7 @@ const Nav = ({}: NavProps) => {
     <nav className="nav">
       {showMenu && <NavMenu onClose={toggleNav} />}
       <div className="nav__logo">
-        <img className="nav__logo--image" src={Logo} alt="Microsoft Logo" />
+        {/* <img className="nav__logo--image" src={Logo} alt="Microsoft Logo" /> */}
         <Link to={"./"} className="nav__logo--heading">
           Microsoft
         </Link>

@@ -3,7 +3,7 @@ import "./App.scss";
 import TrackerTiles from "./components/TrackerTile/TrackerTile";
 import Nav from "./components/Nav/Nav";
 import TeamMember from "./types/Member";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Tickets from "./containers/Tickets/Tickets";
 import Home from "./containers/Home/Home";
 import Profile from "./containers/Profile/Profile";
@@ -22,7 +22,7 @@ export const handleRender = (team: TeamMember[]) => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         <Nav />
         <Routes>
@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/:memberId" element={<Profile members={team} />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
